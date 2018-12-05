@@ -1,0 +1,53 @@
+// added states in Lagos
+add_filter('woocommerce_states', 'add_custom_states_to_country');
+add_filter('woocommerce_countries_allowed_country_states', 'add_custom_states_to_country');
+function add_custom_states_to_country( $states ) {
+    $states['NG'] = array(
+        'AA' => __('Abraham Adesanya', 'woocommerce'),
+        'AR' => __('Ado Road', 'woocommerce'),
+        'AG' => __('Agege', 'woocommerce'),
+        'AJ' => __('Ajah', 'woocommerce'),
+        'AO' => __('Amuwo Odofin', 'woocommerce'),
+        'AP' => __('Apapa', 'woocommerce'),
+        'AN' => __('Apongbon', 'woocommerce'),
+        'AY' => __('Ayobo', 'woocommerce'),
+        'BD' => __('Badore', 'woocommerce'),
+        'CV' => __('Chevron', 'woocommerce'),
+        'CM' => __('CMS', 'woocommerce'),
+        'EG' => __('Egbeda', 'woocommerce'),
+        'FE' => __('Festac', 'woocommerce'),
+        'GB' => __('Gbagada', 'woocommerce'),
+        'IE' => __('Igbo-Efon', 'woocommerce'),
+        'ID' => __('Idimu', 'woocommerce'),
+		'IJ' => __('Ijegun', 'woocommerce'),
+		'IU' => __('Iju', 'woocommerce'),
+		'IK' => __('Ikeja', 'woocommerce'),
+		'IO' => __('Ikorodu', 'woocommerce'),
+		'IY' => __('Ikoyi', 'woocommerce'),
+		'IL' => __('Ilupeju', 'woocommerce'),
+		'IP' => __('Ipaja', 'woocommerce'),
+		'IS' => __('Isheri', 'woocommerce'),
+		'IT' => __('Isolo', 'woocommerce'),
+		'JK' => __('Jakande', 'woocommerce'),
+		'LK' => __('Lakwe', 'woocommerce'),
+		'LG' => __('Lekki Garden Estate', 'woocommerce'),
+		'LI' => __('Lekki Phase I', 'woocommerce'),
+		'LT' => __('Lekki Phase II', 'woocommerce'),
+		'MI' => __('Magodo Phase I', 'woocommerce'),
+		'MT' => __('Magodo Phase II', 'woocommerce'),
+		'MR' => __('Marina', 'woocommerce'),
+		'MU' => __('Mushin', 'woocommerce'),
+		'NT' => __('Navy Town', 'woocommerce'),
+		'OB' => __('Obalende', 'woocommerce'),
+		'OG' => __('Ogba', 'woocommerce'),
+		'OK' => __('Okota', 'woocommerce'),
+		'OS' => __('Oshodi', 'woocommerce'),
+		'SG' => __('Sangotedo', 'woocommerce'),
+		'ST' => __('Satellite Town', 'woocommerce'),
+		'SU' => __('Surulere', 'woocommerce'),
+		'VG' => __('VGC', 'woocommerce'),
+		'VI' => __('Victoria Island', 'woocommerce'),
+		'YB' => __('Yaba', 'woocommerce')
+        );
+    return $states;
+} 
