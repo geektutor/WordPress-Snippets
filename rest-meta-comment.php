@@ -23,3 +23,4 @@ add_filter( 'rest_prepare_post', 'my_rest_prepare_post', 10, 3 );
 // Allow annonymous comments
 add_filter( 'rest_allow_anonymous_comments', '__return_true' );
 
+// allows you to register and send post meta to the rest api
