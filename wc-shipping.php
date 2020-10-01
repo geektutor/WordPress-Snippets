@@ -1,4 +1,4 @@
-// added states in Lagos
+// added LGs in Lagos to the states array
 add_filter('woocommerce_states', 'add_custom_states_to_country');
 add_filter('woocommerce_countries_allowed_country_states', 'add_custom_states_to_country');
 function add_custom_states_to_country( $states ) {
